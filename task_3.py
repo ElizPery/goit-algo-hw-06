@@ -1,4 +1,20 @@
-graph = {'James': {'Heuston': 4}, 'Heuston': {'Arran': 5, 'James': 3, 'Museum': 6}, 'Museum': {'Heuston': 4, 'Smithfield': 8}, 'Smithfield': {'Four': 3, 'Museum': 6, 'Jervis': 4}, 'Jervis': {'Smithfield': 8, 'Abbey_Street': 4}, 'Abbey_Street': {'GPO': 5, 'Marlborough': 3, 'Jervis': 4, 'Busarast': 5}, 'Busarast': {'Custom': 5, 'Abbey_Street': 4, 'George': 4}, 'George': {'Busarast': 5}, 'Connell': {'GPO': 5, 'Marlborough': 3}, 'GPO': {'Abbey_Street': 4, 'Connell': 2, 'Westmoreland': 5}, 'Westmoreland': {'GPO': 5}, 'Marlborough': {'Abbey_Street': 4, 'Connell': 2}, 'Arran': {'Heuston': 4, 'Four': 3}, 'Four': {'Smithfield': 8, 'Arran': 5, 'Custom': 5}, 'Custom': {'Busarast': 5, 'Four': 3}}
+graph = {
+    'James': {'Heuston': 4},
+    'Heuston': {'Arran': 5, 'James': 4, 'Museum': 6}, 
+    'Museum': {'Heuston': 6, 'Smithfield': 8}, 
+    'Smithfield': {'Four': 3, 'Museum': 8, 'Jervis': 4}, 
+    'Jervis': {'Smithfield': 4, 'Abbey_Street': 4}, 
+    'Abbey_Street': {'GPO': 5, 'Marlborough': 3, 'Jervis': 4, 'Busarast': 5}, 
+    'Busarast': {'Custom': 5, 'Abbey_Street': 5, 'George': 4}, 
+    'George': {'Busarast': 4}, 
+    'Connell': {'GPO': 5, 'Marlborough': 3}, 
+    'GPO': {'Abbey_Street': 5, 'Connell': 5, 'Westmoreland': 5}, 
+    'Westmoreland': {'GPO': 5}, 
+    'Marlborough': {'Abbey_Street': 3, 'Connell': 3}, 
+    'Arran': {'Heuston': 5, 'Four': 3}, 
+    'Four': {'Smithfield': 3, 'Arran': 3, 'Custom': 5}, 
+    'Custom': {'Busarast': 5, 'Four': 5}
+}
 
 
 def dijkstra(graph, start):
